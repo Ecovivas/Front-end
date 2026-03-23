@@ -42,3 +42,136 @@
 .btn-secondary:hover {
   transform: translateY(-2px);
 }
+
+/* HOW IT WORKS */
+
+.how-it-works {
+  background: linear-gradient(135deg, #1f4d3a, #2d6a4f);
+  padding: 40px 0;
+  color: white;
+}
+
+.how-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #333;
+}
+
+.step {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.step-number {
+  background-color: #4CAF50;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+.step-arrow {
+  margin: 0 8px;
+  font-size: 20px;
+  color: #888;
+}
+
+
+/* FEATURED */
+
+.featured {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
+
+.featured-content {
+  display: flex;
+  gap: 40px;
+}
+
+.courses {
+  flex: 3;
+}
+
+.challenge {
+  flex: 1.5;
+}
+
+.courses h2,
+.challenge h2 {
+  color: #2d6a4f;
+  margin-bottom: 20px;
+}
+
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  gap: 25px;
+}
+
+.card {
+  background-color: #eaeaea;
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+/* BUTTON */
+
+.btn-green {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+/* CHALLENGE CARD */
+
+.challenge-card {
+  background-color: #eaeaea;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.challenge-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+}
+
+.challenge-body {
+  padding: 20px;
+}
+
+.challenge-info {
+  font-size: 13px;
+  margin: 15px 0;
+}
