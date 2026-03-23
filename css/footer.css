@@ -1,0 +1,49 @@
+.footer {
+  background-color: #2d5b46;
+  color: white;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.footer-brand img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  background-color: #254b3a;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
