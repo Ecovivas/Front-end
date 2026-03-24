@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/header.css" />
@@ -14,29 +15,29 @@
   <body>
     <div id="header"></div>
 
-    <main>
-      <!-- HERO -->
-
+    <main class="home-page">
       <section class="hero">
         <div class="container hero-content">
+          <p class="hero-kicker">Pequenas ações, grandes impactos</p>
+
           <h1>
             Sustentabilidade Já.
             <span>Aprenda, recicle, transforme.</span>
           </h1>
 
-          <div class="hero-buttons">
-            <a href="#" class="btn-primary"> Explorar Cursos </a>
+          <p class="hero-description">
+            Cursos, desafios e ideias práticas para criar hábitos mais
+            sustentáveis no seu dia a dia.
+          </p>
 
-            <a href="#" class="btn-secondary">
-              &gt; Conhecer Desafio 30 Dias
-            </a>
+          <div class="hero-buttons">
+            <a href="#cursos" class="btn btn-dark">Explorar Cursos</a>
+            <a href="#desafio" class="btn btn-outline">Conhecer Desafio 30 Dias</a>
           </div>
         </div>
       </section>
 
-      <!-- COMO FUNCIONA -->
-
-      <section class="how-it-works">
+      <section class="how-it-works section-dark">
         <div class="container how-content">
           <h2>Como a EcoViva funciona?</h2>
 
@@ -46,14 +47,14 @@
               Escolha um curso
             </div>
 
-            <div class="step-arrow">›</div>
+            <div class="step-arrow">&gt;</div>
 
             <div class="step">
               <span class="step-number">2</span>
               Inscreva-se
             </div>
 
-            <div class="step-arrow">›</div>
+            <div class="step-arrow">&gt;</div>
 
             <div class="step">
               <span class="step-number">3</span>
@@ -63,70 +64,173 @@
         </div>
       </section>
 
-      <!-- CURSOS + DESAFIO -->
-
-      <section class="featured">
-        <div class="container featured-content">
-          <div class="courses">
+      <section class="featured" id="cursos">
+        <div class="container featured-grid">
+          <div class="featured-courses">
             <h2>Cursos em Destaque</h2>
 
-            <div class="cards">
-              <div class="card">
+            <div class="course-cards">
+              <article class="course-card">
                 <h3>Reciclagem</h3>
-
                 <p>
-                  Descubra técnicas de reciclagem para materiais domésticos e
-                  como separar resíduos de maneira eficiente.
+                  Entenda como separar resíduos, reaproveitar materiais e adotar
+                  práticas simples dentro de casa.
                 </p>
+                <a href="#" class="btn btn-green">Saiba mais</a>
+              </article>
 
-                <a href="#" class="btn-green"> Saiba Mais </a>
-              </div>
-
-              <div class="card">
+              <article class="course-card">
                 <h3>Sustentabilidade</h3>
-
                 <p>
-                  Aprenda práticas para viver de forma mais sustentável no seu
-                  dia a dia, reduzindo impactos ambientais.
+                  Descubra hábitos mais conscientes para consumo, descarte e uso
+                  responsável de recursos.
                 </p>
+                <a href="#" class="btn btn-green">Saiba mais</a>
+              </article>
 
-                <a href="#" class="btn-green"> Saiba Mais </a>
-              </div>
-
-              <div class="card">
-                <h3>Aproveitamento de Alimentos</h3>
-
+              <article class="course-card">
+                <h3>Aproveitamento de alimentos</h3>
                 <p>
-                  Cursos focados em aproveitar alimentos e evitar o desperdício,
-                  criando receitas criativas.
+                  Aprenda maneiras criativas de evitar desperdícios e aproveitar
+                  melhor os alimentos no dia a dia.
                 </p>
-
-                <a href="#" class="btn-green"> Saiba Mais </a>
-              </div>
+                <a href="#" class="btn btn-green">Saiba mais</a>
+              </article>
             </div>
           </div>
 
-          <div class="challenge">
+          <aside class="featured-challenge" id="desafio">
             <h2>Desafio Eco30</h2>
 
             <div class="challenge-card">
-              <div class="challenge-header">
-                <small>Desafio em destaque</small>
+              <div class="challenge-card-top">
+                <span class="challenge-badge">Desafio em destaque</span>
                 <h3>30 dias criando hábitos sustentáveis</h3>
               </div>
 
-              <div class="challenge-body">
-                <p>
-                  Transforme pequenos hábitos em grandes impactos para o
-                  planeta.
-                </p>
+              <div class="challenge-card-body">
+                <ul class="challenge-list">
+                  <li>Desafios rápidos para a rotina</li>
+                  <li>Metas simples e práticas</li>
+                  <li>Acompanhamento ao longo de 30 dias</li>
+                </ul>
 
-                <p class="challenge-info">Desafios diários durante 30 dias</p>
-
-                <a href="#" class="btn-green"> Participar </a>
+                <a href="#" class="btn btn-green btn-full">Participar</a>
               </div>
             </div>
+          </aside>
+        </div>
+      </section>
+
+      <div class="section-divider-image" aria-hidden="true">
+        <img src="/assets/background/reta.png" alt="" />
+      </div>
+
+      <section class="ideas-section scenic-section">
+        <div class="container">
+          <h2>Nossas Ideias</h2>
+
+          <div class="ideas-grid">
+            <article class="idea-card idea-card-tags">
+              <h3>Temas que inspiram</h3>
+              <div class="tag-list">
+                <span>Reciclagem</span>
+                <span>Energia</span>
+                <span>Consumo</span>
+                <span>Plástico</span>
+                <span>Reutilização</span>
+              </div>
+            </article>
+
+            <article class="idea-card idea-card-highlight">
+              <h3>Aprendizado acessível</h3>
+              <p>
+                Conteúdos organizados para quem quer começar com pequenas ações
+                e evoluir com constância.
+              </p>
+            </article>
+
+            <article class="idea-card">
+              <h3>Comunidade ativa</h3>
+              <p>
+                Pessoas compartilhando experiências, resultados e novas formas
+                de cuidar melhor do planeta.
+              </p>
+            </article>
           </div>
+        </div>
+      </section>
+
+      <div class="section-divider-image" aria-hidden="true">
+        <img src="/assets/background/reta.png" alt="" />
+      </div>
+
+      <section class="impact-section scenic-section">
+        <div class="container impact-content">
+          <h2>Impacto da Comunidade EcoViva</h2>
+          <p class="impact-intro">
+            Mais de 1.000 pessoas já transformaram seus hábitos com nossa
+            comunidade.
+          </p>
+
+          <h3>O que nossos usuários dizem</h3>
+
+          <div class="testimonials">
+            <article class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="user-icon">A</div>
+                <div>
+                  <strong class="testimonial-name">Ana Beatriz</strong>
+                  <span class="testimonial-role">Participante EcoViva</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                Depois do curso, comecei a separar melhor meus resíduos e reduzi
+                bastante o desperdício dentro de casa.
+              </p>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="user-icon">C</div>
+                <div>
+                  <strong class="testimonial-name">Carlos Henrique</strong>
+                  <span class="testimonial-role">Participante EcoViva</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                O desafio de 30 dias me ajudou a criar constância. Foi simples,
+                prático e realmente útil para minha rotina.
+              </p>
+            </article>
+          </div>
+
+          <div class="stats-container">
+            <div class="stat">
+              <strong>+1.200</strong>
+              <span>participantes</span>
+            </div>
+
+            <div class="stat">
+              <strong>30 dias</strong>
+              <span>de desafios completos</span>
+            </div>
+
+            <div class="stat">
+              <strong>+15.000</strong>
+              <span>ações sustentáveis</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-content">
+          <h2>Pronto para mudar seus hábitos?</h2>
+          <p>Junte-se à nossa comunidade!</p>
+          <a href="#" class="btn btn-green">Participar</a>
         </div>
       </section>
     </main>
