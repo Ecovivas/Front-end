@@ -81,8 +81,17 @@
   padding: 60px 0 40px;
 }
 
+/* CENTRALIZA TODA A SECTION */
+.about-history .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .history-text {
-  max-width: 960px;
+  max-width: 720px; /* mais parecido com o figma */
+  margin: 0 auto;
+  text-align: center;
 }
 
 .history-text p {
@@ -186,17 +195,11 @@
     font-size: 1.6rem;
   }
 
-  .history-text {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
+  .history-text p {
+    font-size: 1rem;
+    line-height: 1.8;
   }
 
-  .about-history .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .team-card {
     padding: 24px 18px;
   }
