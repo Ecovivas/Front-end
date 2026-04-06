@@ -1,111 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="/css/contato.css">
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/contato.css" />
 
-  <title>Contato | EcoViva</title>
-</head>
-<body>
-  <div id="header"></div>
+    <title>Contato | EcoViva</title>
+  </head>
 
-  <main class="contact-page">
-    <section class="contact-hero">
-      <div class="contact-hero-overlay">
-        <div class="container contact-hero-content">
-          <h1>Entre em contato com a gente</h1>
-          <p>Tem dúvidas, sugestões ou quer fazer parte da EcoViva?</p>
-          <p>Estamos aqui para ajudar!</p>
-        </div>
-      </div>
-    </section>
+  <body>
+    <div id="header"></div>
 
-    <section class="contact-form-section">
-      <div class="container">
-        <div class="contact-card">
-          <p class="contact-card-text">
-            Preencha os campos abaixo e entraremos em contato o mais breve possível!
-          </p>
+    <main class="contact-page">
+      <section class="contact-hero">
+        <div class="container">
+          <div class="contact-title-block">
+            <h1>Fale com a gente</h1>
+            <p>Tem dúvidas, sugestões ou quer fazer parte da EcoViva?</p>
+          </div>
 
-          <form class="contact-form">
-            <div class="input-group">
-              <input type="text" placeholder="Nome completo" />
+          <div class="contact-hero-layout">
+            <div class="contact-form-card">
+              <div class="contact-card-header">
+                <h2>Entrar em contato</h2>
+                <p>Preencha os campos abaixo e responderemos em breve.</p>
+              </div>
+
+              <form class="contact-form" id="contactForm">
+                <div class="form-field">
+                  <label for="nome">Nome completo</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome completo"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Seu melhor e-mail"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="assunto">Assunto</label>
+                  <select id="assunto" name="assunto">
+                    <option value="">Assunto</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="suporte">Suporte</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    placeholder="Digite sua mensagem aqui..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                  Enviar mensagem
+                </button>
+              </form>
             </div>
 
-            <div class="input-group">
-              <input type="email" placeholder="E-mail" />
+            <div class="contact-illustration">
+              <img
+                src="/assets/contato/thumb/carta-thumb.png"
+                alt="Ilustração de envelope com folhas"
+              />
             </div>
-
-            <div class="input-group">
-              <select>
-                <option selected disabled>Assunto</option>
-                <option>Dúvida</option>
-                <option>Sugestão</option>
-                <option>Parceria</option>
-                <option>Quero participar da EcoViva</option>
-              </select>
-            </div>
-
-            <div class="input-group">
-              <textarea placeholder="Digite sua mensagem aqui..."></textarea>
-            </div>
-
-            <button type="submit" class="contact-button">Enviar mensagem</button>
-          </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="faq-section">
-      <div class="container">
-        <div class="section-title center">
-          <span></span>
-          <h2>Dúvidas Frequentes</h2>
-          <span></span>
+      <section class="contact-options-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Outras formas de contato</h2>
+          </div>
+
+          <div class="contact-options-grid">
+            <article class="contact-option-card">
+              <div class="contact-option-icon">
+                <img
+                  src="/assets/contato/icons/mail-icon.png"
+                  alt="Ícone de e-mail"
+                />
+              </div>
+
+              <div class="contact-option-content">
+                <h3>ecovivancontato</h3>
+                <p>gmail.com</p>
+              </div>
+            </article>
+
+            <article class="contact-option-card">
+              <div class="contact-option-icon">
+                <img
+                  src="/assets/contato/icons/whatsapp-icon.png"
+                  alt="Ícone do WhatsApp"
+                />
+              </div>
+
+              <div class="contact-option-content">
+                <h3>Whatsapp</h3>
+                <p>Atendimento rápido para tirar dúvidas e enviar sugestões.</p>
+              </div>
+            </article>
+
+            <article class="contact-option-card">
+              <div class="contact-option-icon">
+                <img
+                  src="/assets/contato/icons/atend-icon.png"
+                  alt="Ícone de atendimento"
+                />
+              </div>
+
+              <div class="contact-option-content">
+                <h3>Atendimento online</h3>
+                <p>
+                  Estamos disponíveis em horário comercial para ajudar você.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="faq-grid">
-          <article class="faq-card">
-            <h3>Quanto tempo levam os cursos?</h3>
-            <p>Os cursos são rápidos e flexíveis, feitos para caber na sua própria rotina.</p>
-          </article>
+      <section class="faq-section">
+        <div class="container">
+          <div class="section-title section-title--line">
+            <h2>Dúvidas Frequentes</h2>
+          </div>
 
-          <article class="faq-card">
-            <h3>Preciso ter conhecimento prévio?</h3>
-            <p>Não. Os conteúdos são pensados para iniciantes e qualquer pessoa interessada.</p>
-          </article>
+          <div class="faq-grid">
+            <article class="faq-card active">
+              <button class="faq-question" type="button">
+                <span>Por que fui redirecionado para outro site?</span>
+                <span class="faq-toggle">−</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  A EcoViva funciona como uma ponte entre você e instituições
+                  confiáveis que oferecem cursos e conteúdos sobre
+                  sustentabilidade.
+                </p>
+              </div>
+            </article>
 
-          <article class="faq-card">
-            <h3>Posso fazer mais de um curso?</h3>
-            <p>Sim. Você pode participar de quantos cursos simultaneamente quiser, no seu próprio ritmo.</p>
-          </article>
+            <article class="faq-card">
+              <button class="faq-question" type="button">
+                <span>Os cursos são gratuitos ou pagos?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  A maioria dos conteúdos exibidos na plataforma é gratuita, mas
+                  alguns parceiros podem disponibilizar cursos pagos.
+                </p>
+              </div>
+            </article>
 
-          <article class="faq-card">
-            <h3>Preciso me cadastrar para participar?</h3>
-            <p>Sim, o cadastro permite acompanhar seu progresso e participar dos desafios.</p>
-          </article>
+            <article class="faq-card">
+              <button class="faq-question" type="button">
+                <span>O que é Eco30?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  O Eco30 é um desafio com pequenas ações sustentáveis para você
+                  aplicar no dia a dia durante 30 dias.
+                </p>
+              </div>
+            </article>
 
-          <article class="faq-card">
-            <h3>Posso sugerir novas ideias?</h3>
-            <p>Sim. Adoramos sugestões da comunidade.</p>
-          </article>
+            <article class="faq-card">
+              <button class="faq-question" type="button">
+                <span>Como a EcoViva escolhe os cursos?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Selecionamos cursos com base em relevância, acessibilidade,
+                  clareza do conteúdo e alinhamento com sustentabilidade.
+                </p>
+              </div>
+            </article>
 
-          <article class="faq-card">
-            <h3>Preciso baixar algum aplicativo?</h3>
-            <p>Não. Você pode acessar a EcoViva diretamente pelo navegador.</p>
-          </article>
+            <article class="faq-card">
+              <button class="faq-question" type="button">
+                <span>Preciso fazer todos os dias seguidos?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Não. Você pode seguir no seu ritmo, respeitando sua rotina e
+                  mantendo constância sempre que possível.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-card">
+              <button class="faq-question" type="button">
+                <span>O desafio é gratuito?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim. O desafio Eco30 foi pensado para ser acessível e gratuito
+                  para qualquer pessoa interessada em participar.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <div id="footer"></div>
+    <div id="footer"></div>
 
-  <script src="/js/include.js"></script>
-</body>
+    <script src="/js/include.js"></script>
+    <script src="/js/contato.js"></script>
+  </body>
 </html>
