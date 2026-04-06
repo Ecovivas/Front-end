@@ -170,7 +170,7 @@
   gap: 0;
   background:
     linear-gradient(rgba(244, 239, 230, 0.94), rgba(244, 239, 230, 0.94)),
-    url("/assets/background/textura_papelao.png") repeat;
+    url("/assets/commum/background/textura_papelao.png") repeat;
   border: 1px solid rgba(56, 74, 60, 0.08);
   border-radius: 18px;
   overflow: hidden;
