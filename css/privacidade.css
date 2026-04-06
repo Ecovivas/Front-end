@@ -1,0 +1,98 @@
+.privacy-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(247, 248, 246, 0.6), rgba(247, 248, 246, 0.6)),
+    url("../assets/commum/background/textura_papelao.png") repeat;
+}
+.privacy-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 60px;
+}
+
+.privacy-content {
+  max-width: 680px;
+  width: 100%;
+  background:
+    linear-gradient(rgba(244, 239, 230, 0.3), rgba(244, 239, 230, 0.3)),
+    url("../assets/commum/background/textura_papelao.png") repeat;
+  border-radius: 18px;
+  padding: 32px 30px;
+  border: 1px solid rgba(56, 74, 60, 0.08);
+  box-shadow: 0 12px 26px rgba(34, 45, 38, 0.08);
+  position: relative;
+}
+
+.privacy-content h1 {
+  font-size: 1.6rem;
+  color: #2f3530;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.privacy-section {
+  margin-bottom: 18px;
+}
+
+.privacy-section h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2f3530;
+  margin-bottom: 6px;
+}
+
+.privacy-section p {
+  font-size: 0.85rem;
+  color: #5f685f;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.privacy-section ul {
+  padding-left: 18px;
+  margin-top: 6px;
+}
+
+.privacy-section li {
+  font-size: 0.85rem;
+  color: #5f685f;
+  margin-bottom: 4px;
+}
+
+.privacy-footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.privacy-footer span {
+  color: #3ca45f;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* DECORATION */
+.privacy-decoration {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.privacy-decoration img {
+  width: 220px;
+  opacity: 0.9;
+  display: block;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .privacy-content {
+    padding: 24px 20px;
+  }
+
+  .privacy-decoration {
+    display: none;
+  }
+}

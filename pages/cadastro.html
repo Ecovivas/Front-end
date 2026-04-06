@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+
+    <title>Cadastro | EcoViva</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main class="register-page">
+      <section class="register-section">
+        <div class="container">
+          <div class="register-header">
+            <h1>Junte-se à EcoViva</h1>
+            <p>Leva menos de 1 minuto para começar</p>
+          </div>
+
+          <div class="register-card">
+            <form class="register-form" id="registerForm">
+              <div class="form-group">
+                <label for="fullName">Nome completo</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Insira seu nome"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <div class="input-with-icon">
+                  <span class="input-icon">
+                    <img
+                      src="../assets/cadastro_login/icons/mail-icon.png"
+                      alt="Ícone de e-mail"
+                    />
+                  </span>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Insira seu e-mail"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <div class="input-with-icon">
+                  <span class="input-icon">
+                    <img
+                      src="../assets/cadastro_login/icons/phone-icon.png"
+                      alt="Ícone de telefone"
+                    />
+                  </span>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Insira seu número de telefone"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Data de nascimento</label>
+                <div class="birthdate-row">
+                  <select name="day" id="day">
+                    <option value="">Dia</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                  </select>
+
+                  <select name="month" id="month">
+                    <option value="">Mês</option>
+                    <option>Janeiro</option>
+                    <option>Fevereiro</option>
+                    <option>Março</option>
+                    <option>Abril</option>
+                    <option>Maio</option>
+                    <option>Junho</option>
+                    <option>Julho</option>
+                    <option>Agosto</option>
+                    <option>Setembro</option>
+                    <option>Outubro</option>
+                    <option>Novembro</option>
+                    <option>Dezembro</option>
+                  </select>
+
+                  <select name="year" id="year">
+                    <option value="">Ano</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Senha</label>
+                <div class="input-with-icon input-password">
+                  <span class="input-icon">
+                    <img
+                      src="../assets/cadastro_login/icons/icon-lock.png"
+                      alt="Ícone de cadeado"
+                    />
+                  </span>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Insira sua senha"
+                  />
+                  <button
+                    type="button"
+                    class="toggle-password"
+                    data-target="password"
+                    aria-label="Mostrar ou ocultar senha"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="confirmPassword">Confirmação de senha</label>
+                <div class="input-with-icon input-password">
+                  <span class="input-icon">
+                    <img
+                      src="../assets/cadastro_login/icons/icon-lock.png"
+                      alt="Ícone de cadeado"
+                    />
+                  </span>
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirme sua senha"
+                  />
+                  <button
+                    type="button"
+                    class="toggle-password"
+                    data-target="confirmPassword"
+                    aria-label="Mostrar ou ocultar senha"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="terms-group">
+                <label class="checkbox-row">
+                  <input type="checkbox" name="terms" />
+                  <span>
+                    Li e aceito os
+                    <a href="../pages/termos.html">Termos de Uso</a>
+                    e
+                    <a href="../pages/privacidade.html"
+                      >Política de Privacidade</a
+                    >
+                  </span>
+                </label>
+              </div>
+
+              <button type="submit" class="submit-button">Criar Conta</button>
+
+              <p class="login-link">
+                Já tem uma conta?
+                <a href="../pages/login.html">Entrar</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../js/include.js"></script>
+    <script src="../js/cadastro.js"></script>
+  </body>
+</html>
