@@ -1,7 +1,7 @@
 .home-page {
   overflow-x: hidden;
   background:
-    url("/assets/background/textura_papelao.png") repeat,
+    url("/assets/index/textura_papelao.png") repeat,
     #f3efe6;
 }
 
@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/assets/background/waterfalls.png");
+  background-image: url("/assets/index/waterfalls.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
