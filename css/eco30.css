@@ -1,0 +1,522 @@
+:root {
+  --eco30-green: #4caf50;
+  --eco30-green-dark: #2f8f44;
+  --eco30-green-soft: #d9f0dc;
+  --eco30-gray-900: #373737;
+  --eco30-gray-700: #6f6f6f;
+  --eco30-gray-500: #9d9d9d;
+  --eco30-gray-300: #d7d7d7;
+  --eco30-gray-200: #ededed;
+  --eco30-card: rgba(255, 255, 255, 0.9);
+  --eco30-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.eco30-page {
+  background-image: url("../assets/commum/background/textura_papelao.png");
+  background-repeat: repeat;
+  background-size: 600px auto;
+}
+
+.eco30-hero {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  padding: 56px 0;
+  background:
+    linear-gradient(rgba(245, 248, 245, 0.9), rgba(245, 248, 245, 0.9)),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(76, 175, 80, 0.08),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(76, 175, 80, 0.08),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 65% 75%,
+      rgba(76, 175, 80, 0.06),
+      transparent 20%
+    ),
+    linear-gradient(135deg, rgba(76, 175, 80, 0.08) 1px, transparent 1px),
+    linear-gradient(45deg, rgba(76, 175, 80, 0.06) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    auto,
+    auto,
+    120px 120px,
+    140px 140px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.eco30-hero__content {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.eco30-hero__title {
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  color: #404040;
+}
+
+.eco30-hero__title span {
+  color: var(--eco30-green);
+}
+
+.eco30-hero__progress {
+  width: 100%;
+  max-width: 360px;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #f3f3f3;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.eco30-hero__progress-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    var(--eco30-green-dark),
+    var(--eco30-green)
+  );
+  transition: width 0.3s ease;
+}
+
+.eco30-hero__text {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: var(--eco30-gray-700);
+}
+
+.eco30-hero__button {
+  margin-top: 18px;
+  min-width: 220px;
+  padding: 13px 24px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #57bf5f, #43a84b);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 8px 14px rgba(76, 175, 80, 0.28);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.eco30-hero__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(76, 175, 80, 0.35);
+}
+
+.eco30-content {
+  padding: 42px 0 72px;
+}
+
+.journey {
+  margin-bottom: 34px;
+}
+
+.journey__title {
+  margin-bottom: 18px;
+  font-size: 2rem;
+  color: var(--eco30-green-dark);
+}
+
+.journey__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.journey__track {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 680px;
+}
+
+.journey__step {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #8a8a8a;
+  border-radius: 50%;
+  background: #fff;
+  color: #666;
+  font-weight: 700;
+}
+
+.journey__step--active {
+  border-color: var(--eco30-green);
+  color: var(--eco30-green);
+}
+
+.journey__step--done {
+  background: var(--eco30-green);
+  border-color: var(--eco30-green);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.22);
+}
+
+.journey__line {
+  position: relative;
+  flex: 1;
+  height: 3px;
+  margin: 0 10px;
+  border-radius: 999px;
+  background: #a7a7a7;
+}
+
+.journey__line-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--eco30-green);
+  transition: width 0.3s ease;
+}
+
+.journey__badge {
+  min-width: 170px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #7a7a7a;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: var(--eco30-shadow);
+}
+
+.journey__badge--active {
+  background: linear-gradient(180deg, #57bf5f, #43a84b);
+}
+
+.journey__badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff9b2f;
+}
+
+.challenge-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(220px, 0.9fr);
+  gap: 18px;
+  padding: 18px 18px 16px;
+  margin-bottom: 48px;
+  border-radius: 16px;
+  background: var(--eco30-card);
+  box-shadow: var(--eco30-shadow);
+}
+
+.challenge-card__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge-card__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.challenge-card__icon {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid #7ba67d;
+  border-radius: 50%;
+  color: #7ba67d;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.challenge-card__header h3 {
+  font-size: clamp(2rem, 2.2vw, 2.6rem);
+  color: #333;
+}
+
+.challenge-card__task {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 2vw, 2.45rem);
+  line-height: 1.25;
+  color: #444;
+}
+
+.challenge-card__button {
+  width: 100%;
+  max-width: 360px;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #57bf5f, #43a84b);
+  color: #fff;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.challenge-card__button:hover {
+  transform: translateY(-1px);
+}
+
+.challenge-card__button--done {
+  background: #ececec;
+  color: var(--eco30-green-dark);
+  border-color: #cccccc;
+}
+
+.challenge-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-radius: 14px;
+  background: #f7f7f7;
+  color: #666;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.challenge-card__info--success {
+  background: #f2f8f2;
+}
+
+.challenge-card__info--success p {
+  color: var(--eco30-green-dark);
+  font-weight: 700;
+}
+
+.eco30-dashboard {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(250px, 330px);
+  justify-content: space-between;
+  gap: 28px;
+  align-items: start;
+}
+
+.dashboard-card {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: var(--eco30-shadow);
+  overflow: hidden;
+}
+
+.dashboard-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 16px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.dashboard-card__header h3 {
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.dashboard-card__header--center {
+  justify-content: center;
+}
+
+.dashboard-card__counter {
+  text-align: center;
+  line-height: 1.1;
+}
+
+.dashboard-card__counter-top {
+  color: var(--eco30-green-dark);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.dashboard-card__counter small {
+  display: block;
+  margin-top: 2px;
+  color: #7b7b7b;
+  font-size: 1rem;
+}
+
+.impact-card__content {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 24px 26px;
+  text-align: center;
+}
+
+.impact-card__illustration {
+  margin-bottom: 16px;
+  font-size: 4.8rem;
+  line-height: 1;
+}
+
+.impact-card__content h4 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #3f3f3f;
+}
+
+.impact-card__content p {
+  max-width: 320px;
+  color: #666;
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+
+.calendar-card {
+  padding-bottom: 12px;
+}
+
+.calendar-card__weekdays,
+.calendar-card__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  padding: 14px 16px 0;
+}
+
+.calendar-card__weekdays span {
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.calendar-card__day {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #494949;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.calendar-card__day--empty {
+  visibility: hidden;
+}
+
+.calendar-card__day--done {
+  background: #98d59a;
+  color: #fff;
+}
+
+.calendar-card__day--today {
+  outline: 2px solid #8d8d8d;
+  outline-offset: -2px;
+}
+
+.calendar-card__legend {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 16px 14px 8px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.calendar-card__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.calendar-card__legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.calendar-card__legend-dot--done {
+  background: #98d59a;
+}
+
+.calendar-card__legend-dot--pending {
+  background: #d7d7d7;
+}
+
+@media (max-width: 900px) {
+  .journey__top,
+  .eco30-dashboard,
+  .challenge-card {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .journey__top {
+    gap: 16px;
+  }
+
+  .journey__badge {
+    justify-self: start;
+  }
+
+  .challenge-card__info {
+    min-height: 120px;
+  }
+
+  .eco30-dashboard {
+    justify-content: stretch;
+  }
+}
+
+@media (max-width: 640px) {
+  .eco30-hero {
+    min-height: 280px;
+    padding: 44px 0;
+  }
+
+  .eco30-hero__content {
+    text-align: center;
+  }
+
+  .eco30-hero__progress,
+  .challenge-card__button,
+  .eco30-hero__button {
+    max-width: 100%;
+  }
+
+  .journey__track {
+    width: 100%;
+  }
+
+  .challenge-card {
+    padding: 16px;
+  }
+
+  .challenge-card__task {
+    font-size: 1.8rem;
+  }
+
+  .calendar-card__weekdays,
+  .calendar-card__grid {
+    gap: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/eco30.css" />
+
+    <title>Desafio Eco30 | EcoViva</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main class="eco30-page">
+      <section class="eco30-hero">
+        <div class="container">
+          <div class="eco30-hero__content">
+            <h1 class="eco30-hero__title">Desafio <span>Eco30</span></h1>
+
+            <div
+              class="eco30-hero__progress"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="30"
+              aria-valuenow="0"
+              aria-label="Progresso do desafio Eco30"
+            >
+              <div
+                class="eco30-hero__progress-fill"
+                id="heroProgressFill"
+              ></div>
+            </div>
+
+            <p class="eco30-hero__text">
+              30 dias para transformar seus hábitos e ajudar o planeta.
+            </p>
+
+            <button
+              class="eco30-hero__button"
+              id="joinChallengeButton"
+              type="button"
+            >
+              Participar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="eco30-content">
+        <div class="container">
+          <section class="journey" aria-labelledby="journeyTitle">
+            <h2 id="journeyTitle" class="journey__title">
+              Sua jornada até agora
+            </h2>
+
+            <div class="journey__top">
+              <div class="journey__track">
+                <div
+                  class="journey__step journey__step--active"
+                  id="journeyStepStart"
+                >
+                  <span id="journeyStepStartText">1</span>
+                </div>
+
+                <div class="journey__line">
+                  <div class="journey__line-fill" id="journeyLineFill"></div>
+                </div>
+
+                <div class="journey__step" id="journeyStepEnd">
+                  <span>2</span>
+                </div>
+              </div>
+
+              <div class="journey__badge" id="streakBadge">
+                <span class="journey__badge-dot"></span>
+                <span id="streakText">0 dias consecutivos</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="challenge-card" aria-labelledby="challengeTitle">
+            <div class="challenge-card__main">
+              <div class="challenge-card__header">
+                <span class="challenge-card__icon">i</span>
+                <h3 id="challengeTitle">Desafio de hoje</h3>
+              </div>
+
+              <p class="challenge-card__task" id="currentChallengeTitle">
+                Evite utilizar plásticos descartáveis.
+              </p>
+
+              <button
+                class="challenge-card__button"
+                id="completeChallengeButton"
+                type="button"
+              >
+                Marcar como concluído
+              </button>
+            </div>
+
+            <aside class="challenge-card__info" id="challengeFeedbackBox">
+              <p id="challengeFeedbackText">
+                O plástico descartável leva centenas de anos para se decompor e
+                causa sérios danos ao meio ambiente, principalmente aos oceanos
+                e à vida marinha.
+              </p>
+            </aside>
+          </section>
+
+          <section class="eco30-dashboard">
+            <article class="dashboard-card impact-card">
+              <div class="dashboard-card__header">
+                <h3>Seu Impacto</h3>
+
+                <div class="dashboard-card__counter">
+                  <div class="dashboard-card__counter-top">
+                    <span id="impactCount">0</span>
+                    <span>/ 30</span>
+                  </div>
+                  <small>Dias concluídos</small>
+                </div>
+              </div>
+
+              <div class="impact-card__content">
+                <div class="impact-card__illustration" aria-hidden="true">
+                  🌱🌍
+                </div>
+
+                <h4 id="impactTitle">
+                  Você ainda não começou sua jornada sustentável.
+                </h4>
+
+                <p id="impactDescription">
+                  Complete seus primeiros desafios e acompanhe seu impacto aqui.
+                </p>
+              </div>
+            </article>
+
+            <article class="dashboard-card calendar-card">
+              <div
+                class="dashboard-card__header dashboard-card__header--center"
+              >
+                <h3>Seu Calendário</h3>
+              </div>
+
+              <div class="calendar-card__weekdays" aria-hidden="true">
+                <span>D</span>
+                <span>S</span>
+                <span>T</span>
+                <span>Q</span>
+                <span>Q</span>
+                <span>S</span>
+                <span>S</span>
+              </div>
+
+              <div class="calendar-card__grid" id="calendarGrid"></div>
+
+              <div class="calendar-card__legend">
+                <div class="calendar-card__legend-item">
+                  <span
+                    class="calendar-card__legend-dot calendar-card__legend-dot--done"
+                  ></span>
+                  <span>Concluído</span>
+                </div>
+
+                <div class="calendar-card__legend-item">
+                  <span
+                    class="calendar-card__legend-dot calendar-card__legend-dot--pending"
+                  ></span>
+                  <span>Pendente</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../js/include.js"></script>
+    <script src="../js/eco30.js"></script>
+  </body>
+</html>
