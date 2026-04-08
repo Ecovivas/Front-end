@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(rgba(245, 247, 244, 0.78), rgba(245, 247, 244, 0.78)),
+    linear-gradient(rgba(245, 247, 244, 0), rgba(245, 247, 244, 0.78)),
     url("../assets/commum/background/textura_papelao.png") repeat;
 }
 
@@ -115,7 +115,7 @@
   padding: 24px 22px 20px;
   border-radius: 22px;
   background:
-    linear-gradient(rgba(244, 239, 230, 0.9), rgba(244, 239, 230, 0.9)),
+    linear-gradient(rgba(244, 239, 230, 0), rgba(244, 239, 230, 0.9)),
     url("../assets/commum/background/textura_papelao.png") repeat;
   border: 1px solid rgba(56, 74, 60, 0.08);
   box-shadow: 0 10px 22px rgba(34, 45, 38, 0.08);

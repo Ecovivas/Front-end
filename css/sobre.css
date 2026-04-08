@@ -1,8 +1,8 @@
 .about-page {
   min-height: 100vh;
   background:
-    linear-gradient(rgba(247, 248, 246, 0.95), rgba(247, 248, 246, 0.95)),
-    url("/assets/background/textura_papelao.png") repeat;
+    linear-gradient(rgba(247, 248, 246, 0.8), rgba(247, 248, 246, 0.95)),
+    url("/assets/commum/background/textura_papelao.png") repeat;
   position: relative;
   overflow-x: hidden;
 }
@@ -169,7 +169,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
   background:
-    linear-gradient(rgba(244, 239, 230, 0.94), rgba(244, 239, 230, 0.94)),
+    linear-gradient(rgba(244, 239, 230, 0), rgba(244, 239, 230, 0.94)),
     url("/assets/commum/background/textura_papelao.png") repeat;
   border: 1px solid rgba(56, 74, 60, 0.08);
   border-radius: 18px;
