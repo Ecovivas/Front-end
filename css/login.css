@@ -1,7 +1,10 @@
-.login-page {
-  min-height: 100vh;
-  position: relative;
+.auth-page {
   overflow-x: hidden;
+}
+
+.login-page {
+  position: relative;
+  overflow: hidden;
   background:
     linear-gradient(rgba(245, 247, 244, 0.78), rgba(245, 247, 244, 0.78)),
     url("../assets/commum/background/textura_papelao.png") repeat;
@@ -12,15 +15,15 @@
   content: "";
   position: absolute;
   pointer-events: none;
-  opacity: 0.28;
+  opacity: 0.24;
   z-index: 0;
 }
 
 .login-page::before {
-  top: 30px;
+  top: 20px;
   left: -120px;
-  width: 420px;
-  height: 900px;
+  width: 380px;
+  height: 760px;
   background:
     radial-gradient(
       circle at 72% 12%,
@@ -56,9 +59,9 @@
 
 .login-page::after {
   top: 20px;
-  right: -130px;
-  width: 430px;
-  height: 900px;
+  right: -120px;
+  width: 380px;
+  height: 760px;
   background:
     radial-gradient(
       circle at 30% 14%,
@@ -95,44 +98,32 @@
 .login-section {
   position: relative;
   z-index: 1;
-  padding: 34px 0 42px;
+  width: 100%;
+  padding: 48px 0 56px;
 }
 
-.login-header {
-  text-align: center;
-  margin-bottom: 18px;
-}
-
-.login-header h1 {
-  font-size: clamp(2.1rem, 3.2vw, 3rem);
-  line-height: 1.05;
-  color: #43a047;
-  font-weight: 800;
-  margin-bottom: 6px;
-}
-
-.login-header p {
-  font-size: 1rem;
-  color: #2f352f;
-  font-weight: 600;
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-card {
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   margin: 0 auto;
+  padding: 24px 22px 20px;
+  border-radius: 22px;
   background:
-    linear-gradient(rgba(244, 239, 230, 0.83), rgba(244, 239, 230, 0.83)),
+    linear-gradient(rgba(244, 239, 230, 0.9), rgba(244, 239, 230, 0.9)),
     url("../assets/commum/background/textura_papelao.png") repeat;
   border: 1px solid rgba(56, 74, 60, 0.08);
-  border-radius: 18px;
-  box-shadow: 0 12px 26px rgba(34, 45, 38, 0.09);
-  padding: 20px 22px 18px;
+  box-shadow: 0 10px 22px rgba(34, 45, 38, 0.08);
 }
 
 .login-avatar {
-  width: 88px;
-  height: 88px;
+  width: 96px;
+  height: 96px;
   margin: 0 auto 18px;
   border-radius: 50%;
   overflow: hidden;
@@ -150,28 +141,28 @@
 
 .login-form {
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .form-group {
   display: grid;
-  gap: 6px;
+  gap: 8px;
 }
 
 .form-group label {
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #474f47;
 }
 
 .form-group input {
   width: 100%;
-  height: 38px;
+  height: 52px;
   border: 1px solid rgba(73, 82, 74, 0.12);
   border-radius: 999px;
   background: #ffffff;
-  padding: 0 14px;
-  font-size: 0.88rem;
+  padding: 0 18px;
+  font-size: 1rem;
   color: #353b35;
   outline: none;
   transition:
@@ -193,17 +184,16 @@
 }
 
 .input-with-icon input {
-  padding-left: 40px;
-  padding-right: 38px;
+  padding-left: 50px;
 }
 
 .input-icon {
   position: absolute;
   top: 50%;
-  left: 14px;
+  left: 18px;
   transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -216,39 +206,19 @@
   object-fit: contain;
 }
 
-.password-icon-button {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  border: 0;
-  background: transparent;
-  padding: 0;
-  opacity: 0.65;
-  cursor: default;
-}
-
-.password-icon-button img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 .login-options {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
   margin-top: 2px;
 }
 
 .remember-me {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.76rem;
+  gap: 8px;
+  font-size: 0.95rem;
   color: #5d655d;
   cursor: pointer;
 }
@@ -258,19 +228,19 @@
 }
 
 .forgot-password {
-  font-size: 0.76rem;
+  font-size: 0.95rem;
   color: #43a047;
   font-weight: 600;
 }
 
 .login-button {
   width: 100%;
-  height: 38px;
+  height: 52px;
   border: 0;
   border-radius: 999px;
   background: linear-gradient(180deg, #4caf50 0%, #42a248 100%);
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 700;
   cursor: pointer;
   transition:
@@ -291,15 +261,14 @@
 }
 
 .divider span {
-  font-size: 0.76rem;
+  font-size: 0.95rem;
   color: #7d847d;
 }
 
 .signup-link {
   text-align: center;
-  font-size: 0.78rem;
+  font-size: 1rem;
   color: #646c64;
-  margin-top: 2px;
 }
 
 .signup-link a {
@@ -309,23 +278,51 @@
 
 @media (max-width: 640px) {
   .login-section {
-    padding-top: 26px;
-  }
-
-  .login-header h1 {
-    font-size: 1.85rem;
-  }
-
-  .login-header p {
-    font-size: 0.92rem;
+    padding: 28px 0 36px;
   }
 
   .login-card {
-    padding: 16px 14px;
+    max-width: 100%;
+    padding: 18px 14px 16px;
+    border-radius: 18px;
+  }
+
+  .login-avatar {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 16px;
+  }
+
+  .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .login-button {
+    height: 48px;
+    font-size: 0.95rem;
+  }
+
+  .input-with-icon input {
+    padding-left: 44px;
+  }
+
+  .input-icon {
+    left: 15px;
+    width: 15px;
+    height: 15px;
   }
 
   .login-options {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
+  }
+
+  .remember-me,
+  .forgot-password,
+  .signup-link,
+  .divider span {
+    font-size: 0.9rem;
   }
 }
