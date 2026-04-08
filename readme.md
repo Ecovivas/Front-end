@@ -4,7 +4,6 @@
   <img src="./assets/commum/icons/ecoviva-logo.png" alt="Logo Ecoviva" 200"/>
 </p>
 
-
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
@@ -58,8 +57,6 @@ O curso proporcionou a base necessária para o desenvolvimento do Ecoviva, permi
 <p align="center">
   <img src="./assets/prints/eco30.png" alt="Desafio Eco30 Ecoviva" width="300"/>
 
-
-  ## 👥 Integrantes
 ## 👥 Integrantes
 
 <table align="center">
@@ -71,7 +68,7 @@ O curso proporcionou a base necessária para o desenvolvimento do Ecoviva, permi
       </a>
     </td>
     <td align="center">
-      <a href="LINK_GITHUB_INGRID">
+      <a href="https://github.com/Ingrid-Michelle">
         <img src="./assets/sobre/members/ingrid.jpeg" width="120" height="120" style="object-fit: cover;"120"><br>
         <sub><b>Ingrid</b></sub>
       </a>
@@ -83,7 +80,7 @@ O curso proporcionou a base necessária para o desenvolvimento do Ecoviva, permi
       </a>
     </td>
     <td align="center">
-      <a href="LINK_GITHUB_NATHAN">
+      <a href="https://github.com/marquesnathan2218">
         <img src="./assets/sobre/members/nathan.png" width="120" height="120" style="object-fit: cover;"120"><br>
         <sub><b>Nathan</b></sub>
       </a>
