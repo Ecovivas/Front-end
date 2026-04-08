@@ -1,18 +1,18 @@
-.privacy-page {
+.terms-page {
   min-height: 100vh;
   background:
     linear-gradient(rgba(250, 248, 244, 0.2), rgba(250, 248, 244, 0.45)),
     url("../assets/commum/background/textura_papelao.png") repeat;
 }
 
-.privacy {
+.terms {
   position: relative;
   display: flex;
   justify-content: center;
   padding: 72px 0 80px;
 }
 
-.privacy__leaf {
+.terms__leaf {
   position: absolute;
   top: -10px;
   right: 40px;
@@ -22,13 +22,13 @@
   user-select: none;
 }
 
-.privacy__content {
+.terms__content {
   width: min(100%, 760px);
   position: relative;
   z-index: 1;
 }
 
-.privacy__content h1 {
+.terms__content h1 {
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.15;
   color: #2f2f2f;
@@ -36,11 +36,11 @@
   font-weight: 800;
 }
 
-.privacy__section {
+.terms__section {
   margin-bottom: 34px;
 }
 
-.privacy__section h2 {
+.terms__section h2 {
   font-size: clamp(1.2rem, 1.6vw, 1.7rem);
   line-height: 1.25;
   color: #3e3e3e;
@@ -48,14 +48,33 @@
   font-weight: 800;
 }
 
-.privacy__section p {
+.terms__section p,
+.terms__section li {
   font-size: clamp(1rem, 1.3vw, 1.18rem);
   line-height: 1.28;
   color: rgba(70, 70, 70, 0.78);
   font-weight: 700;
 }
 
-.privacy__brand {
+.terms__section p + p {
+  margin-top: 4px;
+}
+
+.terms__list-title {
+  margin-top: 8px;
+}
+
+.terms__section ul {
+  margin-top: 6px;
+  padding-left: 28px;
+  list-style: disc;
+}
+
+.terms__section li {
+  margin-bottom: 4px;
+}
+
+.terms__brand {
   margin-top: 52px;
   text-align: center;
   color: #69a543;
@@ -64,43 +83,47 @@
 }
 
 @media (max-width: 900px) {
-  .privacy {
+  .terms {
     padding: 56px 0 64px;
   }
 
-  .privacy__leaf {
+  .terms__leaf {
     width: min(260px, 42vw);
     top: -6px;
     right: 8px;
   }
 
-  .privacy__content {
+  .terms__content {
     width: min(100%, 680px);
   }
 }
 
 @media (max-width: 640px) {
-  .privacy {
+  .terms {
     padding: 36px 0 56px;
   }
 
-  .privacy__leaf {
+  .terms__leaf {
     width: 170px;
     top: 6px;
     right: 6px;
     opacity: 0.88;
   }
 
-  .privacy__content h1 {
+  .terms__content h1 {
     margin-bottom: 28px;
     padding-right: 76px;
   }
 
-  .privacy__section {
+  .terms__section {
     margin-bottom: 24px;
   }
 
-  .privacy__brand {
+  .terms__section ul {
+    padding-left: 22px;
+  }
+
+  .terms__brand {
     margin-top: 36px;
     font-size: 1.5rem;
   }
