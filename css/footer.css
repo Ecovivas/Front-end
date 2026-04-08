@@ -1,77 +1,80 @@
 .footer {
-  background: linear-gradient(180deg, var(--green-800), var(--green-900));
-  color: var(--white);
+  background-color: #2e7d32;
+  color: #ffffff;
+  margin-top: 0;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 1.1fr 1.6fr;
-  gap: 36px;
-  padding: 42px 0 30px;
-}
-
-.footer-brand img {
-  width: 92px;
-  height: auto;
-  margin-bottom: 12px;
-  filter: brightness(0) invert(1);
-}
-
-.footer-brand p {
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.6;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.footer-links h4 {
-  margin-bottom: 12px;
-  font-size: 15px;
-}
-
-.footer-links a,
-.footer-links p {
-  display: block;
-  margin-bottom: 8px;
-  color: rgba(255, 255, 255, 0.82);
-  line-height: 1.5;
-}
-
-.footer-links a:hover {
-  color: var(--white);
-}
-
-.social {
+.footer-container {
   display: flex;
-  gap: 10px;
-  margin-top: 8px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 80px;
 }
 
-.social span {
-  width: 30px;
-  height: 30px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
+.footer-brand {
+  max-width: 250px;
 }
 
-.footer-bottom {
-  padding: 14px 0 18px;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.7);
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column {
+  min-width: 150px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #e0e0e0;
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .footer-content,
-  .footer-links {
-    grid-template-columns: 1fr;
-  }
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+.footer-contact .email {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-contact .icon {
+  margin-right: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+
+.footer-bottom {
+  background-color: #1b5e20;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
 }

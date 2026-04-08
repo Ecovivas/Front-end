@@ -1,13 +1,26 @@
 <header class="header">
-  <div class="container header-content">
-    <div class="logo">
-      <img src="/assets/commum/icons/ecoviva-logo.png" alt="Ecoviva logo" />
-    </div>
+  <div class="header__container">
+    <!-- Logo -->
+    <a href="/index.html" class="header__logo">
+      <img src="/assets/commum/icons/ecoviva-logo.png" alt="EcoViva" />
+    </a>
 
-    <nav class="nav">
-      <a href="/index.html">Início</a>
-      <a href="/pages/sobre.html">Sobre</a>
-      <a href="/pages/contato.html" class="active">Contato</a>
+    <!-- Navegação -->
+    <nav class="header__nav" id="navMenu">
+      <a href="/index.html" class="header__link">Início</a>
+      <a href="/pages/cursos.html" class="header__link">Cursos</a>
     </nav>
+
+    <!-- Ações -->
+    <div class="header__actions">
+      <a href="/pages/login.html" class="header__login">Login</a>
+
+      <button class="header__menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
+<scriot src="/js/header.js"></script>

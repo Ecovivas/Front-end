@@ -26,10 +26,21 @@
               <span>Aprenda, recicle, transforme.</span>
             </h1>
 
-            <p class="hero-description">
-              Descubra cursos, desafios e conteúdos práticos para desenvolver
-              hábitos mais sustentáveis no seu dia a dia.
-            </p>
+
+              <a
+                href="/pages/cursos.html"
+                class="hero-button hero-button-primary"
+              >
+                Explorar Cursos
+              </a>
+
+              <a
+                href="/pages/eco30.html"
+                class="hero-button hero-button-secondary"
+              >
+                Conhecer Desafio 30 Dias
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -41,18 +52,18 @@
 
             <div class="how-steps">
               <div class="how-step">
-                <span class="step-dot"></span>
-                <span>Explorar</span>
+                <span class="step-number">1</span>
+                <span>Escolha um curso</span>
               </div>
 
               <div class="how-step">
-                <span class="step-dot"></span>
-                <span>Aprender</span>
+                <span class="step-number">2</span>
+                <span>Inscreva-se</span>
               </div>
 
               <div class="how-step">
-                <span class="step-dot"></span>
-                <span>Aplicar</span>
+                <span class="step-number">3</span>
+                <span>Gere impacto</span>
               </div>
             </div>
           </div>
@@ -62,67 +73,83 @@
       <section class="featured-courses" id="cursos">
         <div class="container">
           <div class="section-heading">
+            <div class="section-title-line"></div>
             <h2>Cursos em Destaque</h2>
+            <div class="section-title-line"></div>
           </div>
 
           <div class="course-grid">
-            <article class="course-card course-card-blue">
-              <div class="course-card-top"></div>
+            <article class="course-card">
+              <div class="course-card-top course-card-top-blue">
+                <div class="course-logo-wrapper">
+                  <!-- <img src="/assets/index/logo-sebrae.png" alt="Sebrae" class="course-logo"> -->
+                  <span class="course-logo-placeholder"></span>
+                </div>
+              </div>
 
               <div class="course-card-body">
-                <span class="course-badge">Iniciante</span>
-                <h3>ECO para pequenas propriedades</h3>
-                <p>
-                  Conteúdo introdutório com ações simples e práticas para
-                  aplicar no dia a dia.
-                </p>
+                <h3>ESG para pequenas empresas</h3>
+
+                <div class="course-divider"></div>
 
                 <div class="course-meta">
-                  <span>4 aulas</span>
-                  <span>40 min</span>
+                  <span>Gratuito</span>
+                  <span>Online</span>
                 </div>
 
-                <a href="#" class="card-button">Saiba mais</a>
+                <a href="/pages/cursos.html" class="card-button">Saiba mais</a>
               </div>
             </article>
 
-            <article class="course-card course-card-green">
-              <div class="course-card-top"></div>
+            <article class="course-card">
+              <div class="course-card-top course-card-top-green">
+                <div class="course-logo-wrapper">
+                  <!-- <img src="/assets/index/logo-profec.png" alt="Cursos Profec" class="course-logo"> -->
+                  <span class="course-logo-placeholder"></span>
+                </div>
+              </div>
 
               <div class="course-card-body">
-                <span class="course-badge">Recomendado</span>
-                <h3>Reduzir, Reutilizar, Reciclar</h3>
-                <p>
-                  Aprenda a separar resíduos, reaproveitar materiais e consumir
-                  de forma mais consciente.
-                </p>
+                <h3>Básico em Reciclagem e Sustentabilidade</h3>
+
+                <div class="course-divider"></div>
 
                 <div class="course-meta">
-                  <span>6 aulas</span>
-                  <span>1h 10min</span>
+                  <span>Gratuito</span>
+                  <span>Online</span>
                 </div>
 
-                <a href="#" class="card-button">Saiba mais</a>
+                <a
+                  href="https://www.profec.com.br/curso/curso-gratuito-de-basico-em-reciclagem-e-sustentabilidade"
+                  class="card-button"
+                  >Saiba mais</a
+                >
               </div>
             </article>
 
-            <article class="course-card course-card-teal">
-              <div class="course-card-top"></div>
+            <article class="course-card">
+              <div class="course-card-top course-card-top-teal">
+                <div class="course-logo-wrapper">
+                  <!-- <img src="/assets/index/logo-evop.png" alt="EVOP" class="course-logo"> -->
+                  <span class="course-logo-placeholder"></span>
+                </div>
+              </div>
 
               <div class="course-card-body">
-                <span class="course-badge">Popular</span>
-                <h3>Você sabe o que reciclar?</h3>
-                <p>
-                  Entenda o descarte correto e evite erros comuns ao separar os
-                  materiais recicláveis.
-                </p>
+                <h3>Você sabe o que é a COP?</h3>
+
+                <div class="course-divider"></div>
 
                 <div class="course-meta">
-                  <span>5 aulas</span>
-                  <span>55 min</span>
+                  <span>Gratuito</span>
+                  <span>Online</span>
                 </div>
 
-                <a href="#" class="card-button">Saiba mais</a>
+                <a
+                  href="https://cop30.br/pt-br/sobre-a-cop30/o-que-e-a-cop"
+                  class="card-button"
+                  >Saiba mais</a
+                >
               </div>
             </article>
           </div>
@@ -132,29 +159,66 @@
       <section class="challenge-section" id="desafio">
         <div class="container">
           <div class="challenge-card">
-            <div class="challenge-header">
-              <span class="challenge-tag">Desafio Eco30</span>
-              <h2>Transforme pequenos hábitos em grandes impactos</h2>
+            <div class="challenge-info">
+              <div class="challenge-title">
+                <div class="challenge-main-icon-wrapper">
+                  <img
+                    src="/assets/index/icons/icon-desenvolvimento.png"
+                    alt="Desafio Eco30"
+                    class="challenge-main-icon"
+                  />
+                  <span class="challenge-main-icon-placeholder"></span>
+                </div>
+
+                <div>
+                  <h2>Desafio Eco30</h2>
+                  <p>30 dias criando hábitos saudáveis</p>
+                </div>
+              </div>
+
+              <a href="/pages/eco30.html" class="challenge-button">
+                Conhecer desafio
+              </a>
             </div>
 
-            <div class="challenge-features">
-              <div class="challenge-feature">
-                <strong>1 novo hábito</strong>
-                <span>por semana</span>
+            <div class="challenge-tags">
+              <div class="challenge-tag-box">
+                <div class="tag-icon-wrapper">
+                  <img
+                    src="/assets/index/icons/icon-desenvolvimento.png"
+                    alt="Desenvolvimento Sustentável"
+                    class="tag-icon-image"
+                  />
+
+                  <span class="tag-icon-placeholder"></span>
+                </div>
+                <span>Desenvolvimento Sustentável</span>
               </div>
 
-              <div class="challenge-feature">
-                <strong>Metas simples</strong>
-                <span>e práticas</span>
+              <div class="challenge-tag-box">
+                <div class="tag-icon-wrapper">
+                  <img
+                    src="/assets/index/icons/icon-educacao.png"
+                    alt="Educação Ambiental"
+                    class="tag-icon-image"
+                  />
+                  <span class="tag-icon-placeholder"></span>
+                </div>
+                <span>Educação Ambiental</span>
               </div>
 
-              <div class="challenge-feature">
-                <strong>Acompanhamento</strong>
-                <span>durante 30 dias</span>
+              <div class="challenge-tag-box">
+                <div class="tag-icon-wrapper">
+                  <img
+                    src="/assets/index//icons/icon-comunidade.png"
+                    alt="Comunidade EcoViva"
+                    class="tag-icon-image"
+                  />
+                  <span class="tag-icon-placeholder"></span>
+                </div>
+                <span>Comunidade EcoViva</span>
               </div>
             </div>
-
-            <a href="#" class="challenge-button">Quero participar</a>
           </div>
         </div>
       </section>
@@ -163,7 +227,7 @@
         <div class="container">
           <div class="community-cta-box">
             <h2>Pronto para mudar seus hábitos?</h2>
-            <p>Junte-se à nossa comunidade.</p>
+            <p>Junte-se à nossa comunidade!</p>
             <a href="/pages/eco30.html" class="cta-button">Participar</a>
           </div>
         </div>
@@ -171,11 +235,11 @@
 
       <section class="impact-section">
         <div class="container">
-          <div class="section-heading">
+          <div class="impact-header">
             <h2>Impacto da Comunidade <span>EcoViva</span></h2>
             <p>
-              Mais de 1.000 pessoas já transformaram seus hábitos com nossa
-              plataforma.
+              Mais de <span>1.000</span> pessoas já transformaram seus hábitos
+              com a nossa comunidade.
             </p>
           </div>
 
@@ -186,10 +250,16 @@
           <div class="testimonial-grid">
             <article class="testimonial-card">
               <div class="testimonial-user">
-                <div class="testimonial-avatar">A</div>
+                <div class="testimonial-avatar">
+                  <img
+                    src="/assets/index/pessoa_nao_existe_1.png"
+                    alt="Foto de timóteo"
+                    class="testimonial-avatar-image"
+                  />
+                </div>
 
-                <div>
-                  <h3>Ana M. V.</h3>
+                <div class="testimonial-user-info">
+                  <h3>Timóteo</h3>
                   <span>Participante EcoViva</span>
                 </div>
               </div>
@@ -197,17 +267,23 @@
               <div class="testimonial-stars">★★★★★</div>
 
               <p>
-                Passei a separar melhor os resíduos da minha casa e hoje consigo
-                reduzir muito mais o desperdício no dia a dia.
+                O desafio Eco 30 fez uma grande diferença na minha rotina. Foi
+                simples, prático e realmente útil para o meu dia a dia.
               </p>
             </article>
 
             <article class="testimonial-card">
               <div class="testimonial-user">
-                <div class="testimonial-avatar">C</div>
+                <div class="testimonial-avatar">
+                  <img
+                    src="/assets/index/pessoa_nao_existe_2.png"
+                    alt="Foto de jéssica"
+                    class="testimonial-avatar-image"
+                  />
+                </div>
 
-                <div>
-                  <h3>Carlos H. S.</h3>
+                <div class="testimonial-user-info">
+                  <h3>jessica</h3>
                   <span>Participante EcoViva</span>
                 </div>
               </div>
@@ -215,26 +291,131 @@
               <div class="testimonial-stars">★★★★★</div>
 
               <p>
-                O desafio me ajudou a manter constância. As atividades eram
-                simples, práticas e realmente possíveis de aplicar na rotina.
+                O desafio Eco 30 virou um guia na minha constância. Foi simples,
+                prático e realmente útil para a minha rotina.
               </p>
             </article>
           </div>
 
           <div class="stats-bar">
             <div class="stat-item">
-              <strong>1.000+</strong>
-              <span>usuários</span>
+              <strong>+1.000</strong>
+              <span>participantes</span>
             </div>
 
             <div class="stat-item">
-              <strong>350+</strong>
-              <span>cursos concluídos</span>
+              <strong>30 dias</strong>
+              <span>de desafio completos</span>
             </div>
 
             <div class="stat-item">
-              <strong>14.000+</strong>
+              <strong>+10.000</strong>
               <span>ações sustentáveis</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="companies-section">
+        <div class="companies-title-bar">
+          <div class="container">
+            <h2>Empresas que Inspiram</h2>
+            <p>
+              Quem já está fazendo a diferença para um futuro mais sustentável
+            </p>
+          </div>
+        </div>
+
+        <div class="companies-hero">
+          <div class="companies-hero-overlay"></div>
+        </div>
+
+        <div class="container companies-content">
+          <div class="companies-panel">
+            <div class="companies-grid">
+              <article class="company-card company-card-border">
+                <div class="company-logo-wrapper">
+                  <img
+                    src="/assets/index/serasa-logo.png"
+                    alt="Serasa Experian"
+                    class="company-logo-image"
+                  />
+                  <span
+                    class="company-logo-placeholder company-logo-placeholder-wide"
+                  ></span>
+                </div>
+
+                <p>
+                  Ferramentas que incentivam práticas ESG e impacto positivo nas
+                  empresas.
+                </p>
+
+                <a
+                  href="/pages/serasa.html"
+                  class="company-button"
+                  >Saiba mais</a
+                >
+              </article>
+
+              <article class="company-card">
+                <div class="company-logo-wrapper">
+                  <img
+                    src="/assets/index/logo-proa.png"
+                    alt="PROA"
+                    class="company-logo-image"
+                  />
+                  <span class="company-logo-placeholder"></span>
+                </div>
+
+                <p>
+                  Atua há mais de 15 anos ajudando jovens a se desenvolverem e a
+                  se prepararem para o mercado de trabalho.
+                </p>
+
+                <a href="#" class="company-button">Saiba mais</a>
+              </article>
+            </div>
+
+            <div class="companies-reasons">
+              <h3>Por que apoiar empresas sustentáveis?</h3>
+
+              <div class="reasons-grid">
+                <div class="reason-item">
+                  <div class="reason-icon-wrapper">
+                    <img
+                      src="/assets/index//icons/folha-icon.png"
+                      alt="Preservação da natureza"
+                      class="reason-icon-image"
+                    />
+                    <span class="reason-icon-placeholder"></span>
+                  </div>
+                  <p>Preservação da natureza</p>
+                </div>
+
+                <div class="reason-item">
+                  <div class="reason-icon-wrapper">
+                    <img
+                      src="/assets/index/icons/pessoas-icon.png"
+                      alt="Impacto social positivo"
+                      class="reason-icon-image"
+                    />
+                    <span class="reason-icon-placeholder"></span>
+                  </div>
+                  <p>Impacto social positivo</p>
+                </div>
+
+                <div class="reason-item">
+                  <div class="reason-icon-wrapper">
+                    <img
+                      src="/assets/index/icons/icon-crescimento.png"
+                      alt="Crescimento consciente"
+                      class="reason-icon-image"
+                    />
+                    <span class="reason-icon-placeholder"></span>
+                  </div>
+                  <p>Crescimento consciente</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

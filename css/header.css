@@ -1,66 +1,130 @@
 .header {
-  background: #f6f6f2;
-  border-bottom: 1px solid rgba(32, 81, 61, 0.08);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.header-content {
-  min-height: 82px;
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
 }
 
-.logo {
+/* LOGO */
+.header__logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.header__logo span {
+  color: #66bb6a;
+}
+
+/* NAV */
+.header__nav {
   display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 88px;
-  height: auto;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
   gap: 28px;
 }
 
-.nav a {
+.header__link {
   position: relative;
-  font-size: 14px;
-  color: var(--text-900);
+  font-size: 1.3rem;
+  color: #444;
+  transition: 0.2s;
 }
 
-.nav a:hover,
-.nav a.active {
-  color: var(--green-700);
-}
-
-.nav a.active::after,
-.nav a:hover::after {
+.header__link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px;
-  width: 100%;
+  bottom: -4px;
+  width: 0%;
   height: 2px;
-  border-radius: 999px;
-  background: var(--green-500);
+  background: #4caf50;
+  transition: 0.2s;
 }
 
-@media (max-width: 640px) {
-  .header-content {
-    min-height: 74px;
+.header__link:hover {
+  color: #2e7d32;
+}
+
+.header__link:hover::after {
+  width: 100%;
+}
+
+/* LOGIN BUTTON */
+.header__login {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.header__login:hover {
+  background: #43a047;
+}
+
+/* ACTIONS */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* MOBILE MENU BUTTON */
+.header__menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header__menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #333;
+}
+
+/* LOGO IMAGE */
+.header__logo img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .header__nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+
+    background: white;
     flex-direction: column;
-    justify-content: center;
-    padding: 12px 0;
+    align-items: center;
+    padding: 20px 0;
+
+    display: none;
   }
 
-  .nav {
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
+  .header__nav.active {
+    display: flex;
+  }
+
+  .header__menu-btn {
+    display: flex;
   }
 }
