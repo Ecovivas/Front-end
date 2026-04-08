@@ -1,8 +1,9 @@
 # 🌱 Ecoviva
 
 <p align="center">
-  <img src="./assets/commum/icons/ecoviva-logo.png" alt="Logo Ecoviva" width="200"/>
+  <img src="./assets/commum/icons/ecoviva-logo.png" alt="Logo Ecoviva" 200"/>
 </p>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
@@ -58,43 +59,40 @@ O curso proporcionou a base necessária para o desenvolvimento do Ecoviva, permi
   <img src="./assets/prints/eco30.png" alt="Desafio Eco30 Ecoviva" width="300"/>
 
 
+  ## 👥 Integrantes
 ## 👥 Integrantes
+
 <table align="center">
   <tr>
     <td align="center">
       <a href="https://github.com/nesrux/">
-        <img src="./assets/sobre/members/joao.png" width="120" style="border-radius: 10px;"><br>
+        <img src="./assets/sobre/members/joao.png" width="120" height="120" style="object-fit: cover;"><br>
         <sub><b>João Marcos</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="LINK_GITHUB_INGRID">
-        <img src="./assets/sobre/members/ingrid.jpeg" width="120" style="border-radius: 10px;"><br>
+        <img src="./assets/sobre/members/ingrid.jpeg" width="120" height="120" style="object-fit: cover;"120"><br>
         <sub><b>Ingrid</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="LINK_GITHUB_KETHELEEN">
-        <img src="./assets/sobre/members/ketheleen.jpeg" width="120" style="border-radius: 10px;"><br>
+        <img src="./assets/sobre/members/ketheleen.jpeg" width="120" height="120" style="object-fit: cover;"120"><br>
         <sub><b>Ketheleen</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="LINK_GITHUB_NATHAN">
-        <img src="./assets/sobre/members/nathan.png" width="120" style="border-radius: 10px;"><br>
+        <img src="./assets/sobre/members/nathan.png" width="120" height="120" style="object-fit: cover;"120"><br>
         <sub><b>Nathan</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="LINK_GITHUB_GEOVANNA">
-        <img src="./assets/sobre/members/geovanna.jpg" width="120" style="border-radius: 10px;"><br>
+        <img src="./assets/sobre/members/geovanna.jpg" width="120" height="120" style="object-fit: cover;"120"><br>
         <sub><b>Geovanna</b></sub>
       </a>
     </td>
-
   </tr>
 </table>
