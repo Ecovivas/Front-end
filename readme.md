@@ -70,25 +70,19 @@ O curso proporcionou a base necessária para o desenvolvimento do Ecoviva, permi
     <td align="center">
       <a href="https://github.com/Ingrid-Michelle">
         <img src="./assets/sobre/members/ingrid.jpeg" width="120" height="120" style="object-fit: cover;"120"><br>
-        <sub><b>Ingrid</b></sub>
+        <sub><b>Ingrid Michelle</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="LINK_GITHUB_KETHELEEN">
+      <a href="https://github.com/katheleenjs">
         <img src="./assets/sobre/members/ketheleen.jpeg" width="120" height="120" style="object-fit: cover;"120"><br>
-        <sub><b>Ketheleen</b></sub>
+        <sub><b>Katheleen Jesus</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/marquesnathan2218">
         <img src="./assets/sobre/members/nathan.png" width="120" height="120" style="object-fit: cover;"120"><br>
-        <sub><b>Nathan</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="LINK_GITHUB_GEOVANNA">
-        <img src="./assets/sobre/members/geovanna.jpg" width="120" height="120" style="object-fit: cover;"120"><br>
-        <sub><b>Geovanna</b></sub>
+        <sub><b>Nathan Marques</b></sub>
       </a>
     </td>
   </tr>
